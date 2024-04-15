@@ -13,3 +13,48 @@
 .footer {
   @apply h-16;
 }
+/* 标题 */
+.title {
+  @apply tracking-wider font-semibold text-4xl text-center;
+}
+.title-1 {
+  @apply tracking-wider font-semibold text-3xl;
+}
+/* 标题 */
+.sub-title {
+  @apply text-center text-3xl mb-5 font-semibold;
+}
+
+.down-card {
+  @apply flex shadow-2xl flex-col py-6 px-10 rounded-l;
+}
+
+/* 卡片公用样式 */
+.card {
+  @apply shadow-2xl flex-col py-6 px-10 rounded-lg flex relative;
+}
+/* 卡片公用样式 */
+/* 卡片里面圆圈 */
+.card-rounded {
+  @apply flex bg-white w-48 h-48 text-center items-center rounded-full justify-center mb-10;
+}
+/* 卡片里面圆圈 */
+/* 实心原点 */
+.circle {
+  @apply rounded-full bg-black p-2 inline-block text-center;
+}
+/* 实心原点 */
+/* 方案input 搜索框 */
+.planInput {
+  @apply rounded-full bg-white h-12 w-56 border-solid border-2 border-planInput pl-4  text-left text-xl;
+}
+.planInputButton {
+  @apply absolute top-0 right-0 w-11 h-11 bg-indexCard rounded-full;
+}
+/* 方案input 搜索框 */
+
+/* 应用场景 */
+.scenarios{
+  @apply absolute top-0 left-0 bg-scenarios rounded-tl-md rounded-br-lg p-2;
+}
+/* 应用场景 */
