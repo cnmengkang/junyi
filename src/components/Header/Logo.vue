@@ -1,8 +1,3 @@
 <template>
-  <div class="logo">logo</div>
+  <div class="logo"><a href="/">logo</a></div>
 </template>
-
-<script setup lang="ts">
-import { ref, reactive } from "vue";
-</script>
-<style scoped></style>

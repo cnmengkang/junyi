@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w flex items-center">
-    <Logo />
-    <Nav />
+  <div class="max-w m-auto flex items-center">
+    <Logo class="w-1/3" />
+    <Nav class="w-1/3 flex" />
   </div>
 </template>
 <script setup lang="ts">

@@ -1,7 +1,9 @@
 <template>
-  <div class="nav">
-    <button @click="handleClickDownload('/')">解决方案</button>
-    <button @click="handleClickDownload('/download')">软件下载</button>
+  <div class="nav gap-10">
+    <button class="text-2xl" @click="handleClickDownload('/')">解决方案</button>
+    <button class="text-2xl" @click="handleClickDownload('/download')">
+      软件下载
+    </button>
   </div>
 </template>
 <script setup lang="ts">
