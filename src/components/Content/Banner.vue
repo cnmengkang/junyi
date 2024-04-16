@@ -1,17 +1,16 @@
 <template>
   <n-carousel draggable show-arrow autoplay class="mb-10 wrapper">
-    <img class="carousel-img" src="/src/assets/images/banner2.png" />
     <img class="carousel-img" src="/src/assets/images/banner1.png" />
-
+    <img class="carousel-img" src="/src/assets/images/banner2.png" />
     <img class="carousel-img" src="/src/assets/images/banner3.png" />
 
     <template #arrow="{ prev, next }">
       <div class="custom-arrow">
         <button type="button" class="custom-arrow--left" @click="prev">
-          1111
+          <img src="/src/assets/images/arrow-left.png" alt="" />
         </button>
         <button type="button" class="custom-arrow--right" @click="next">
-          111
+          <img src="/src/assets/images/arrow-right.png" alt="" />
         </button>
       </div>
     </template>
@@ -46,8 +45,6 @@
   color: #fff;
   border-width: 0;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -57,9 +54,6 @@
 }
 .custom-arrow .custom-arrow--right {
   right: 5%;
-}
-.custom-arrow button:hover {
-  background-color: #fff;
 }
 
 .custom-arrow button:active {

@@ -7,9 +7,10 @@
     <section class="flex-1">
       <router-view />
     </section>
-    <footer class="bg-footer">
+    <footer class="bg-footer py-10">
       <Footer />
     </footer>
+    <n-back-top :right="100" />
   </section>
 </template>
 <script setup lang="ts">

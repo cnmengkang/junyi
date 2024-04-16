@@ -1,9 +1,7 @@
 <template>
-  <div class="download">
-    <div class="bg-Scheme mb-16">
-      <div class="max-w m-auto">111111111111</div>
-    </div>
-    <div class="mb-16">
+  <div class="download relative">
+    <img src="/src/assets/images/downBg.png" alt="" />
+    <div class="mb-16 absolute bottom-[10%] left-2/4 max-w -translate-x-1/2">
       <h2 class="title mb-10">俊意智能键鼠软件下载</h2>
       <div class="flex gap-20 justify-center">
         <div
@@ -40,9 +38,11 @@
             </div>
           </div>
           <h6 class="sub-title mt-10">Windows客户端下载</h6>
-          <p class="mb-2">版本：1111</p>
-          <p class="mb-2">更新时间：2024-04-15</p>
-          <p>系统支持：(Windows7-11)</p>
+          <p class="mb-2">版本：{{ version }}</p>
+          <p class="mb-2">更新时间：{{ timestamp }}</p>
+          <p>
+            系统支持：<span v-for="item in system_support">{{ item }}/</span>
+          </p>
         </div>
         <div
           class="card bg-downCard hover:bg-cardHover hover:text-fontColor w-80 transition duration-500"
@@ -70,15 +70,42 @@
               </g>
             </svg>
           </div>
-          <h6 class="sub-title mt-10">MAC客户端下载</h6>
+          <p class="sub-title">敬请期待</p>
+          <!-- <h6 class="sub-title mt-10">MAC客户端下载</h6>
           <p class="mb-2">版本：1111</p>
           <p class="mb-2">更新时间：2024-04-15</p>
-          <p>系统支持：(Windows7-11)</p>
+          <p>系统支持：(Windows7-11)</p> -->
         </div>
       </div>
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
+let version = ref();
+let timestamp = ref();
+let system_support = ref([]);
+onMounted(() => {
+  getAjax();
+});
+let getAjax = () => {
+  fetch("/src/data.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      version.value = data.version;
+      timestamp.value = data.timestamp;
+      system_support.value = data.system_support;
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+};
+</script>
 <style scoped>
 .card:hover svg {
   fill: rgba(42, 121, 245, 1);

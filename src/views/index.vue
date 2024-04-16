@@ -3,131 +3,67 @@
   <banner />
   <!-- banner -->
   <!-- 我们的服务 -->
-  <div class="max-w m-auto mb-16">
+  <div class="max-w m-auto mb-16" id="my">
     <h2 class="title mb-1">我们的服务</h2>
     <p class="text-center text-neutral-300">.OUR SERVICES.</p>
-    <div class="flex gap-20 justify-center mt-10">
-      <div class="card bg-indexCard w-7/12 items-center">
-        <div class="card-rounded">11111</div>
-        <h6 class="sub-title">鼠标定制</h6>
-        <p class="text-center">共享高端配置，自由选择</p>
+    <div class="flex gap-20 mt-10">
+      <div class="w-4/5">
+        <img src="/src/assets/images/my-left.png" alt="" />
       </div>
-      <div class="card bg-indexCard w-3/12 items-center">
-        <div class="card-rounded">11111</div>
-        <h6 class="sub-title">键盘定制</h6>
-        <p class="text-center">个性化定制，自由选择</p>
+      <div class="w-2/5">
+        <img
+          style="height: 340px"
+          class="bg-contain"
+          src="/src/assets/images/my-right.png"
+          alt=""
+        />
       </div>
     </div>
   </div>
   <!-- 我们的服务 -->
   <!-- 鼠标解决方案 -->
-  <div class="max-w m-auto mb-16">
+  <div class="max-w m-auto mb-16" id="mouse">
     <h2 class="title mb-1">鼠标解决方案</h2>
     <p class="text-center text-neutral-300">.Mouse Solutions.</p>
-    <h2 class="title-1 mb-4 text-fontColor">方案一（PCBA定制）：</h2>
-    <div class="flex gap-20 bg-bgColor p-8 mb-10">
-      <div class="bg-indexPlan w-full items-center">
-        <img src="/src/assets/images/u212.png" alt="" />
+    <div class="flex gap-20 justify-center mt-10">
+      <div
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+      >
+        <img src="/src/assets/images/mouse1.png" alt="" />
       </div>
-      <div class="bg-indexPlan w-full items-center flex justify-center">
-        <div class="flex flex-col items-center">
-          <h2 class="title-1 mb-5 text-center text-fontColor">
-            PCBA 定制服务商
-          </h2>
-          <p class="items-center flex justify-center gap-2 mb-6">
-            物料采取<span class="circle"></span>鼠标定制<span
-              class="circle"
-            ></span
-            >多种配置供选择
-          </p>
-          <button class="planInput relative">
-            骏意键盘
-            <div class="planInputButton"></div>
-          </button>
-        </div>
-      </div>
-    </div>
-    <h2 class="title-1 mb-4 text-fontColor">方案二（整机定制）：</h2>
-    <div class="flex gap-20 bg-bgColor p-8">
-      <div class="bg-indexPlan w-full items-center">
-        <img src="/src/assets/images/u212.png" alt="" />
-      </div>
-      <div class="bg-indexPlan w-full items-center flex justify-center">
-        <div class="flex flex-col items-center">
-          <h2 class="title-1 mb-5 text-center text-fontColor">
-            PCBA 定制服务商
-          </h2>
-          <p class="items-center flex justify-center gap-2 mb-6">
-            物料采取<span class="circle"></span>鼠标定制<span
-              class="circle"
-            ></span
-            >多种配置供选择
-          </p>
-          <button class="planInput relative">
-            骏意键盘
-            <div class="planInputButton"></div>
-          </button>
-        </div>
+      <div
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+      >
+        <img src="/src/assets/images/mouse2.png" alt="" />
       </div>
     </div>
   </div>
   <!-- 鼠标解决方案 -->
   <!-- 键盘解决方案 -->
-  <div class="max-w m-auto mb-16">
+  <div class="max-w m-auto mb-16" id="keyboard">
     <h2 class="title mb-1">键盘解决方案</h2>
     <p class="text-center text-neutral-300">.Mouse Solutions.</p>
-    <h2 class="title-1 mb-4 text-fontColor">方案一（PCBA定制）：</h2>
-    <div class="flex gap-20 bg-bgColor p-8 mb-10">
-      <div class="bg-indexPlan w-full items-center">
-        <img src="/src/assets/images/u212.png" alt="" />
+    <div class="flex gap-20 justify-center mt-10">
+      <div
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+      >
+        <img src="/src/assets/images/keyboard1.png" alt="" />
       </div>
-      <div class="bg-indexPlan w-full items-center flex justify-center">
-        <div class="flex flex-col items-center">
-          <h2 class="title-1 mb-5 text-center text-fontColor">
-            PCBA 定制服务商
-          </h2>
-          <p class="items-center flex justify-center gap-2 mb-6">
-            物料采取<span class="circle"></span>键盘定制<span
-              class="circle"
-            ></span
-            >多种配置供选择
-          </p>
-          <button class="planInput relative">
-            骏意键盘
-            <div class="planInputButton"></div>
-          </button>
-        </div>
-      </div>
-    </div>
-    <h2 class="title-1 mb-4 text-fontColor">方案二（整机定制）：</h2>
-    <div class="flex gap-20 bg-bgColor p-8">
-      <div class="bg-indexPlan w-full items-center">
-        <img src="/src/assets/images/u212.png" alt="" />
-      </div>
-      <div class="bg-indexPlan w-full items-center flex justify-center">
-        <div class="flex flex-col items-center">
-          <h2 class="title-1 mb-5 text-center text-fontColor">整机定制</h2>
-          <p class="items-center flex justify-center gap-2 mb-6">
-            LOGO定制<span class="circle"></span>整体键盘<span class="circle">
-            </span
-            >价格优惠<span class="circle"> </span>高配置
-          </p>
-          <button class="planInput relative">
-            骏意键盘
-            <div class="planInputButton"></div>
-          </button>
-        </div>
+      <div
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+      >
+        <img src="/src/assets/images/keyboard2.png" alt="" />
       </div>
     </div>
   </div>
   <!-- 键盘解决方案 -->
   <!-- 方案优势 -->
-  <div class="mb-16">
+  <div class="mb-16" id="plan">
     <h2 class="title mb-1">方案优势</h2>
     <p class="text-center text-neutral-300">.Scheme Advantage.</p>
     <div class="bg-Scheme mt-10">
-      <div class="max-w flex m-auto py-16 gap-20">
-        <div class="w-3/5">
+      <div class="max-w flex m-auto gap-20">
+        <div class="w-3/5 flex-wrap flex content-center">
           <div class="flex mb-5">
             <div class="mb-3">
               <h2 class="title-1 mb-2">稳定可靠</h2>
@@ -154,7 +90,9 @@
             </div>
           </div>
         </div>
-        <div class="w-2/5">40</div>
+        <div class="w-2/5">
+          <img src="/src/assets/images/plan.png" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -162,30 +100,30 @@
   <!-- 应用场景 -->
   <div class="max-w m-auto mb-16">
     <h2 class="title mb-1">应用场景</h2>
-    <p class="text-center text-neutral-300">.OUR SERVICES.</p>
+    <p class="text-center text-neutral-300">.Application Scenario.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
-        class="overflow-hidden relative w-2/5 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
         <img src="/src/assets/images/smartOffice.png" alt="" />
         <div class="scenarios">
           <p class="mb-1">智能办公</p>
-          <p class="text-xl">智能办公智能办公智能</p>
+          <p class="text-xl">智慧办公 极速高效 省力省心</p>
         </div>
       </div>
       <div
-        class="overflow-hidden relative w-2/5 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
         <img src="/src/assets/images/study.png" alt="" />
         <div class="scenarios">
           <p class="mb-1">教育学习</p>
-          <p class="text-xl">智能办公智能办公智能</p>
+          <p class="text-xl">智慧学习 助益无穷 使用便捷</p>
         </div>
       </div>
     </div>
   </div>
   <!-- 应用场景 -->
-  <Corporate class="mb-16" />
+  <Corporate class="mb-16" id="scenes" />
 </template>
 <script setup lang="ts">
 import Corporate from "../components/Content/Corporate.vue";
