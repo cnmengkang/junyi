@@ -2,7 +2,7 @@
   <div class="download relative">
     <img src="/src/assets/images/downBg.png" alt="" />
     <div class="mb-16 absolute bottom-[10%] left-2/4 max-w -translate-x-1/2">
-      <h2 class="title mb-10">俊意智能键鼠软件下载</h2>
+      <h2 class="title mb-10">骏意智能键鼠软件下载</h2>
       <div class="flex gap-20 justify-center">
         <div
           class="card bg-downCard hover:bg-cardHover hover:text-fontColor w-80 transition duration-500"
