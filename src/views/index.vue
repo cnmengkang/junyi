@@ -1,6 +1,6 @@
 <template>
   <!-- banner -->
-  <Banner />
+  <banner />
   <!-- banner -->
   <!-- 我们的服务 -->
   <div class="max-w m-auto mb-16">
@@ -187,8 +187,7 @@
   <!-- 应用场景 -->
   <Corporate class="mb-16" />
 </template>
-
 <script setup lang="ts">
 import Corporate from "../components/Content/Corporate.vue";
-import Banner from "../components/Content/Banner.vue";
+import banner from "../components/Content/Banner.vue";
 </script>
