@@ -41,7 +41,7 @@
           <p class="mb-2">版本：{{ version }}</p>
           <p class="mb-2">更新时间：{{ timestamp }}</p>
           <p>
-            系统支持：<span v-for="item in system_support">{{ item }}/</span>
+            系统支持：<span v-for="item in system_support">{{ item }}</span>
           </p>
         </div>
         <div
@@ -89,7 +89,7 @@ onMounted(() => {
   getAjax();
 });
 let getAjax = () => {
-  fetch("/src/data.json")
+  fetch("/public/data.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
