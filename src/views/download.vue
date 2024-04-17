@@ -1,6 +1,6 @@
 <template>
   <div class="download relative">
-    <img src="/src/assets/images/downBg.png" alt="" />
+    <img src="/public/images/downBg.png" alt="" />
     <div class="mb-16 absolute bottom-[10%] left-2/4 max-w -translate-x-1/2">
       <h2 class="title mb-10">骏意智能键鼠软件下载</h2>
       <div class="flex gap-20 justify-center">
@@ -89,7 +89,7 @@ onMounted(() => {
   getAjax();
 });
 let getAjax = () => {
-  fetch("/src/views/data.json")
+  fetch("/public/data.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");

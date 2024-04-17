@@ -8,13 +8,13 @@
     <p class="text-center text-neutral-300">.OUR SERVICES.</p>
     <div class="flex gap-20 mt-10">
       <div class="w-4/5">
-        <img src="/src/assets/images/my-left.png" alt="" />
+        <img src="/public/images/my-left.png" alt="" />
       </div>
       <div class="w-2/5">
         <img
           style="height: 340px"
           class="bg-contain"
-          src="/src/assets/images/my-right.png"
+          src="/public/images/my-right.png"
           alt=""
         />
       </div>
@@ -29,12 +29,12 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/mouse1.png" alt="" />
+        <img src="/public/images/mouse1.png" alt="" />
       </div>
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/mouse2.png" alt="" />
+        <img src="/public/images/mouse2.png" alt="" />
       </div>
     </div>
   </div>
@@ -47,12 +47,12 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/keyboard1.png" alt="" />
+        <img src="/public/images/keyboard1.png" alt="" />
       </div>
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/keyboard2.png" alt="" />
+        <img src="/public/images/keyboard2.png" alt="" />
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div class="w-2/5">
-          <img src="/src/assets/images/plan.png" alt="" />
+          <img src="/public/images/plan.png" alt="" />
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/smartOffice.png" alt="" />
+        <img src="/public/images/smartOffice.png" alt="" />
         <div class="scenarios">
           <p class="mb-1">智能办公</p>
           <p class="text-xl">智慧办公 极速高效 省力省心</p>
@@ -113,7 +113,7 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/src/assets/images/study.png" alt="" />
+        <img src="/public/images/study.png" alt="" />
         <div class="scenarios">
           <p class="mb-1">教育学习</p>
           <p class="text-xl">智慧学习 助益无穷 使用便捷</p>

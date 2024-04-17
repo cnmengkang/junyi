@@ -12,6 +12,6 @@
 </template>
 <style scoped>
 .corporate {
-  background-image: url(/src/assets/images/Corporate.png);
+  background-image: url(/public/images/Corporate.png);
 }
 </style>
