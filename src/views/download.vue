@@ -5,9 +5,15 @@
       <h2 class="title mb-10">骏意智能键鼠软件下载</h2>
       <div class="flex gap-20 justify-center">
         <div
+          v-for="item in result"
+          :key="item.id"
+          @click="handleClickDownload(item)"
           class="card bg-downCard hover:bg-cardHover hover:text-fontColor w-80 transition duration-500"
         >
-          <div class="m-auto w-20 flex items-center justify-center">
+          <div
+            v-if="item.id == 1"
+            class="m-auto w-20 flex items-center justify-center"
+          >
             <div class="m-auto w-20 flex items-center justify-center">
               <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
               <svg
@@ -37,17 +43,10 @@
               </svg>
             </div>
           </div>
-          <h6 class="sub-title mt-10">Windows客户端下载</h6>
-          <p class="mb-2">版本：{{ version }}</p>
-          <p class="mb-2">更新时间：{{ timestamp }}</p>
-          <p>
-            系统支持：<span v-for="item in system_support">{{ item }}</span>
-          </p>
-        </div>
-        <div
-          class="card bg-downCard hover:bg-cardHover hover:text-fontColor w-80 transition duration-500"
-        >
-          <div class="m-auto w-20 flex items-center justify-center">
+          <div
+            v-if="item.id == 2"
+            class="m-auto w-20 flex items-center justify-center"
+          >
             <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
             <svg
               enable-background="new 0 0 512 512"
@@ -70,11 +69,17 @@
               </g>
             </svg>
           </div>
-          <p class="sub-title">敬请期待</p>
-          <!-- <h6 class="sub-title mt-10">MAC客户端下载</h6>
-          <p class="mb-2">版本：1111</p>
-          <p class="mb-2">更新时间：2024-04-15</p>
-          <p>系统支持：(Windows7-11)</p> -->
+          <div class="" v-if="item.show">
+            <h6 class="sub-title mt-10">Windows客户端下载</h6>
+            <p class="mb-2">版本：{{ item.version }}</p>
+            <p class="mb-2">更新时间：{{ item.timestamp }}</p>
+            <p>
+              系统支持：<span>{{ item.system_support }}</span>
+            </p>
+          </div>
+          <div class="" v-else>
+            <h6 class="sub-title mt-10">敬请期待</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -82,9 +87,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-let version = ref();
-let timestamp = ref();
-let system_support = ref([]);
+let result = ref();
 onMounted(() => {
   getAjax();
 });
@@ -97,13 +100,27 @@ let getAjax = () => {
       return response.json();
     })
     .then((data) => {
-      version.value = data.version;
-      timestamp.value = data.timestamp;
-      system_support.value = data.system_support;
+      console.log(data);
+      result.value = data;
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
     });
+};
+let handleClickDownload = (item: any) => {
+  if (!item.isDownload) return;
+  console.log(item);
+  const link = document.createElement("a");
+  // 设置链接的下载属性，这里的文件名为example.txt，可以根据需求修改
+  link.setAttribute("download", item.url);
+  // 设置链接的href属性为文件的URL
+  link.href = item.url;
+  // 将链接添加到DOM中
+  document.body.appendChild(link);
+  // 模拟点击链接进行下载
+  link.click();
+  // 移除链接
+  document.body.removeChild(link);
 };
 </script>
 <style scoped>
