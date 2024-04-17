@@ -89,7 +89,7 @@ onMounted(() => {
   getAjax();
 });
 let getAjax = () => {
-  fetch("data.json")
+  fetch("/src/data.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
