@@ -20,8 +20,8 @@
 </template>
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import { ref, watch } from "vue";
-let active = ref(1);
+import { ref, onMounted } from "vue";
+let active = ref(0);
 const router: any = useRouter();
 let options: any = ref([
   {
@@ -47,18 +47,20 @@ let options: any = ref([
 ]);
 let handleClickDownload = (path: any) => {
   router.push(path);
+  handSelectPatch(path);
 };
-watch(
-  () => router.currentRoute,
-  (newValue) => {
-    if (newValue.value.fullPath.includes("download")) {
-      active.value = 2;
-    } else {
-      active.value = 1;
-    }
-  },
-  { deep: true }
-);
+onMounted(() => {
+  handSelectPatch(router.currentRoute.value.path);
+});
+// 选中状态
+let handSelectPatch = (pathUrl: any) => {
+  let path = pathUrl;
+  if (path == "/") {
+    active.value = 1;
+  } else {
+    active.value = 2;
+  }
+};
 let handleSelect = (key: string | number) => {
   scrollToAnchor(key);
 };
