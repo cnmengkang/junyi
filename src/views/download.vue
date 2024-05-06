@@ -100,7 +100,6 @@ let getAjax = () => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       result.value = data;
     })
     .catch((error) => {

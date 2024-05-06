@@ -62,7 +62,16 @@ let handSelectPatch = (pathUrl: any) => {
   }
 };
 let handleSelect = (key: string | number) => {
-  scrollToAnchor(key);
+  let path = router.currentRoute.value.path;
+  if (path == "/") {
+    scrollToAnchor(key);
+  } else {
+    router.push("/");
+    let timer = setInterval(() => {
+      scrollToAnchor(key);
+      clearInterval(timer);
+    }, 500);
+  }
 };
 let scrollToAnchor = (anchorId: any) => {
   let element = document.getElementById(anchorId);
