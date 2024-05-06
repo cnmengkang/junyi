@@ -15,7 +15,6 @@ export default defineConfig({
     open: true,
     cors: false,
     hmr: true, // 热更新
-
   },
   build: {
     terserOptions: {
