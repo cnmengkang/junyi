@@ -66,6 +66,7 @@ let handleSelect = (key: string | number) => {
   if (path == "/") {
     scrollToAnchor(key);
   } else {
+    active.value = 1;
     router.push("/");
     let timer = setInterval(() => {
       scrollToAnchor(key);

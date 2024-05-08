@@ -42,7 +42,7 @@
   <!-- 键盘解决方案 -->
   <div class="max-w m-auto mb-16" id="keyboard">
     <h2 class="title mb-1">键盘解决方案</h2>
-    <p class="text-center text-neutral-300">.Mouse Solutions.</p>
+    <p class="text-center text-neutral-300">.Keyboard Solutions.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
