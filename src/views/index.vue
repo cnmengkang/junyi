@@ -4,7 +4,7 @@
   <!-- banner -->
   <!-- 我们的服务 -->
   <div class="max-w m-auto mb-16" id="my">
-    <h2 class="title mb-1">我们的服务</h2>
+    <h2 class="title mb-1">{{ $t("content.title1") }}</h2>
     <p class="text-center text-neutral-300">.OUR SERVICES.</p>
     <div class="flex gap-20 mt-10">
       <div class="w-4/5">
@@ -23,7 +23,7 @@
   <!-- 我们的服务 -->
   <!-- 鼠标解决方案 -->
   <div class="max-w m-auto mb-16" id="mouse">
-    <h2 class="title mb-1">鼠标解决方案</h2>
+    <h2 class="title mb-1">{{ $t("content.title2") }}</h2>
     <p class="text-center text-neutral-300">.Mouse Solutions.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
@@ -41,7 +41,7 @@
   <!-- 鼠标解决方案 -->
   <!-- 键盘解决方案 -->
   <div class="max-w m-auto mb-16" id="keyboard">
-    <h2 class="title mb-1">键盘解决方案</h2>
+    <h2 class="title mb-1">{{ $t("content.title3") }}</h2>
     <p class="text-center text-neutral-300">.Keyboard Solutions.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
@@ -59,32 +59,32 @@
   <!-- 键盘解决方案 -->
   <!-- 方案优势 -->
   <div class="mb-16" id="plan">
-    <h2 class="title mb-1">方案优势</h2>
+    <h2 class="title mb-1">{{ $t("content.title4") }}</h2>
     <p class="text-center text-neutral-300">.Scheme Advantage.</p>
     <div class="bg-Scheme mt-10">
       <div class="max-w flex m-auto gap-20">
         <div class="w-3/5 flex-wrap flex content-center">
           <div class="flex mb-5">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">稳定可靠</h2>
+              <h2 class="title-1 mb-2">{{$t('content4.title1')}}</h2>
               <p>
-                我们的产品已经获得逾百万用户的深度信赖与认可，用户对其卓越性能的一致赞誉
+                {{$t('content4.desc1')}}
               </p>
             </div>
           </div>
           <div class="flex mb-5">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">多系统兼容</h2>
+              <h2 class="title-1 mb-2">{{$t('content4.title2')}}</h2>
               <p>
-                我们多系统支持，无论是使用Win7、Win8、Win10、Win11还是macOS，都能满足需求，确保在多系统上都能得到一致的优质体验
+                {{$t('content4.desc2')}}
               </p>
             </div>
           </div>
           <div class="flex">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">多样化解决方案</h2>
+              <h2 class="title-1 mb-2">{{$t('content4.title3')}}</h2>
               <p>
-                我们提供从完整设备、PCB布局到软件设计的全方位定制化方案，确保全面满足您的个性化需求
+                {{$t('content4.desc3')}}
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@
   <!-- 方案优势 -->
   <!-- 应用场景 -->
   <div class="max-w m-auto mb-16">
-    <h2 class="title mb-1">应用场景</h2>
+    <h2 class="title mb-1">{{ $t("content.title5") }}</h2>
     <p class="text-center text-neutral-300">.Application Scenario.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div

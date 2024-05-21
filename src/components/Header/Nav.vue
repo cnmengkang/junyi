@@ -6,7 +6,7 @@
       @click="handleClickDownload('/')"
     >
       <n-dropdown trigger="hover" :options="options" @select="handleSelect">
-        解决方案
+        {{ $t("header.menu1") }}
       </n-dropdown>
     </button>
     <button
@@ -14,7 +14,7 @@
       :class="{ active: active === 2 }"
       @click="handleClickDownload('/download')"
     >
-      软件下载
+      {{ $t("header.menu2") }}
     </button>
   </div>
 </template>
