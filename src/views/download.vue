@@ -1,8 +1,8 @@
 <template>
   <div class="download relative">
-    <img src="/public/images/downBg.png" alt="" />
+    <img :src="$t('banner.download')" alt="" />
     <div class="mb-16 absolute bottom-[10%] left-2/4 max-w -translate-x-1/2">
-      <h2 class="title mb-10">骏意智能键鼠软件下载</h2>
+      <h2 class="title mb-10">{{ $t("download.title") }}</h2>
       <div class="flex gap-20 justify-center">
         <div
           v-for="item in result"
@@ -70,15 +70,21 @@
             </svg>
           </div>
           <div class="" v-if="item.show">
-            <h6 class="sub-title mt-10">Windows客户端下载</h6>
-            <p class="mb-2">版本：{{ item.version }}</p>
-            <p class="mb-2">更新时间：{{ item.timestamp }}</p>
+            <h6 class="sub-title mt-10">{{ $t("download.win") }}</h6>
+            <p class="mb-2">
+              {{ $t("download.version") }} : {{ item.version }}
+            </p>
+            <p class="mb-2">
+              {{ $t("download.upTime") }} : {{ item.timestamp }}
+            </p>
             <p>
-              系统支持：<span>{{ item.system_support }}</span>
+              {{ $t("download.SystemSupport") }} ：<span>{{
+                item.system_support
+              }}</span>
             </p>
           </div>
           <div class="" v-else>
-            <h6 class="sub-title mt-10">敬请期待</h6>
+            <h6 class="sub-title mt-10">{{ $t("download.stay") }}</h6>
           </div>
         </div>
       </div>

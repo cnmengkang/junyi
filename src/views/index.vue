@@ -8,14 +8,13 @@
     <p class="text-center text-neutral-300">.OUR SERVICES.</p>
     <div class="flex gap-20 mt-10">
       <div class="w-4/5">
-        <img src="/public/images/my-left.png" alt="" />
+        <img :src="$t('banner.myLeft')" alt="" />
       </div>
       <div class="w-2/5">
         <img
           style="height: 340px"
           class="bg-contain"
-          src="/public/images/my-right.png"
-          alt=""
+          :src="$t('banner.myRight')"
         />
       </div>
     </div>
@@ -29,12 +28,12 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/public/images/mouse1.png" alt="" />
+        <img :src="$t('banner.mouse1')" alt="" />
       </div>
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/public/images/mouse2.png" alt="" />
+        <img :src="$t('banner.mouse2')" alt="" />
       </div>
     </div>
   </div>
@@ -47,12 +46,12 @@
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/public/images/keyboard1.png" alt="" />
+        <img :src="$t('banner.keyboard1')" alt="" />
       </div>
       <div
         class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
       >
-        <img src="/public/images/keyboard2.png" alt="" />
+        <img :src="$t('banner.keyboard2')" alt="" />
       </div>
     </div>
   </div>
@@ -66,25 +65,25 @@
         <div class="w-3/5 flex-wrap flex content-center">
           <div class="flex mb-5">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">{{$t('content4.title1')}}</h2>
+              <h2 class="title-1 mb-2">{{ $t("content4.title1") }}</h2>
               <p>
-                {{$t('content4.desc1')}}
+                {{ $t("content4.desc1") }}
               </p>
             </div>
           </div>
           <div class="flex mb-5">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">{{$t('content4.title2')}}</h2>
+              <h2 class="title-1 mb-2">{{ $t("content4.title2") }}</h2>
               <p>
-                {{$t('content4.desc2')}}
+                {{ $t("content4.desc2") }}
               </p>
             </div>
           </div>
           <div class="flex">
             <div class="mb-3">
-              <h2 class="title-1 mb-2">{{$t('content4.title3')}}</h2>
+              <h2 class="title-1 mb-2">{{ $t("content4.title3") }}</h2>
               <p>
-                {{$t('content4.desc3')}}
+                {{ $t("content4.desc3") }}
               </p>
             </div>
           </div>
@@ -106,8 +105,8 @@
       >
         <img src="/public/images/smartOffice.png" alt="" />
         <div class="scenarios">
-          <p class="mb-1">智能办公</p>
-          <p class="text-xl">智慧办公 极速高效 省力省心</p>
+          <p class="mb-1">{{ $t("app.title1") }}</p>
+          <p class="text-xl">{{ $t("app.desc1") }}</p>
         </div>
       </div>
       <div
@@ -115,8 +114,8 @@
       >
         <img src="/public/images/study.png" alt="" />
         <div class="scenarios">
-          <p class="mb-1">教育学习</p>
-          <p class="text-xl">智慧学习 助益无穷 使用便捷</p>
+          <p class="mb-1">{{ $t("app.title2") }}</p>
+          <p class="text-xl">{{ $t("app.desc2") }}</p>
         </div>
       </div>
     </div>

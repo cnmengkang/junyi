@@ -1,8 +1,8 @@
 <template>
   <n-carousel draggable show-arrow autoplay class="mb-10 wrapper">
-    <img class="carousel-img" src="/public/images/banner1.png" />
-    <img class="carousel-img" src="/public/images/banner2.png" />
-    <img class="carousel-img" src="/public/images/banner3.png" />
+    <img class="carousel-img" :src="$t('banner.banner1')" />
+    <img class="carousel-img" :src="$t('banner.banner2')" />
+    <img class="carousel-img" :src="$t('banner.banner3')" />
 
     <template #arrow="{ prev, next }">
       <div class="custom-arrow">

@@ -4,18 +4,19 @@
       <div class="logo">
         <img width="170" src="/public/images/whiteLogo.png" alt="" />
       </div>
-      <!-- <div class="">
-        <p class="mb-1">地址：安徽省合肥市蜀山区</p>
-        <p>备案号：1111111111111111</p>
-      </div> -->
+      <div class="">
+        <p class="mb-1">{{$t('footer.address')}} : {{ $t('footer.city') }}</p>
+        <!-- <p>{{$t('footer.email')}}：1111111111111111</p> -->
+      </div>
     </div>
     <div class="right w-3/6 flex items-center gap-5">
       <div class="w-10">
         <img src="/public/images/connect.png" alt="" />
       </div>
       <div class="">
-        <p class="mb-1">联系我们</p>
-        <p>郭先生：134-8076-8237</p>
+        <p class="mb-1">{{$t('footer.contactUs')}}</p>
+        <p class="mb-1">{{$t('footer.deckPeople')}} : {{ $t('footer.name') }}</p>
+        <p>{{$t('footer.tel')}}：134-8076-8237</p>
       </div>
     </div>
   </div>

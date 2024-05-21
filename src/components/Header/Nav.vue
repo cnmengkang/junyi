@@ -21,27 +21,29 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import { ref, onMounted } from "vue";
+import { useI18n } from 'vue-i18n' 
+const { t } = useI18n()
 let active = ref(0);
 const router: any = useRouter();
 let options: any = ref([
   {
-    label: "我们的服务",
+    label:t('menu.nav1'),
     key: "my",
   },
   {
-    label: "鼠标解决方案",
+    label: t('menu.nav2'),
     key: "mouse",
   },
   {
-    label: "键盘解决方案",
+    label: t('menu.nav3'),
     key: "keyboard",
   },
   {
-    label: "方案优势",
+    label: t('menu.nav4'),
     key: "plan",
   },
   {
-    label: "应用场景",
+    label: t('menu.nav5'),
     key: "scenes",
   },
 ]);
