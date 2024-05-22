@@ -12,16 +12,16 @@ export default {
         nav5: '应用场景',
     },
     banner: {
-        banner1: new URL('/public/images/zh/banner1.png', import.meta.url).href,
-        banner2: new URL('/public/images/zh/banner2.png', import.meta.url).href,
-        banner3: new URL('/public/images/zh/banner3.png', import.meta.url).href, 
-        myLeft: new URL('/public/images/zh/my-left.png', import.meta.url).href, //我的服务
-        myRight: new URL('/public/images/zh/my-right.png', import.meta.url).href,
-        mouse1: new URL('/public/images/zh/mouse1.png', import.meta.url).href, //鼠标
-        mouse2: new URL('/public/images/zh/mouse2.png', import.meta.url).href,
-        keyboard1: new URL('/public/images/zh/keyboard1.png', import.meta.url).href, //键盘
-        keyboard2: new URL('/public/images/zh/keyboard2.png', import.meta.url).href,
-        download: new URL('/public/images/zh/downBg.png', import.meta.url).href,
+        banner1: "https://i.junyitek.com/junyitek/img/zh/banner1.png",
+        banner2: "https://i.junyitek.com/junyitek/img/zh/banner2.png",
+        banner3: "https://i.junyitek.com/junyitek/img/zh/banner3.png", 
+        myLeft: "https://i.junyitek.com/junyitek/img/zh/my-left.png", //我的服务
+        myRight: "https://i.junyitek.com/junyitek/img/zh/my-right.png",
+        mouse1: "https://i.junyitek.com/junyitek/img/zh/mouse1.png", //鼠标
+        mouse2: "https://i.junyitek.com/junyitek/img/zh/mouse2.png",
+        keyboard1: "https://i.junyitek.com/junyitek/img/zh/keyboard1.png", //键盘
+        keyboard2: "https://i.junyitek.com/junyitek/img/zh/keyboard2.png",
+        download: "https://i.junyitek.com/junyitek/img/zh/downBg.png",
     },
     content: {
         title1: '我们的服务',
@@ -71,6 +71,7 @@ export default {
         deckPeople: '对接人',
         name: "郭先生",
         tel: "电话",
+        icp:"粤ICP备2024253237号"
     },
     //  底部翻译
     language:{

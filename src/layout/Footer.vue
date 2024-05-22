@@ -6,7 +6,7 @@
       </div>
       <div class="">
         <p class="mb-1">{{$t('footer.address')}} : {{ $t('footer.city') }}</p>
-        <!-- <p>{{$t('footer.email')}}：1111111111111111</p> -->
+        <p>{{$t('footer.icp')}}</p>
       </div>
     </div>
     <div class="right w-3/6 flex items-center gap-5">

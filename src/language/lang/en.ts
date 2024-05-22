@@ -5,23 +5,23 @@ export default {
         menu2: 'Software Download',
     },
     menu: {
-        nav1: 'OUR SERVICES',
+        nav1: 'Our Services',
         nav2: 'Mouse Solutions',
         nav3: 'Mouse Solutions',
         nav4: 'Scheme Advantages',
         nav5: 'Application Scenario',
     },
     banner: {
-        banner1: new URL('/public/images/en/banner1.png', import.meta.url).href,
-        banner2: new URL('/public/images/en/banner2.png', import.meta.url).href,
-        banner3: new URL('/public/images/en/banner3.png', import.meta.url).href,
-        myLeft: new URL('/public/images/en/my-left.png', import.meta.url).href, //我的服务
-        myRight: new URL('/public/images/en/my-right.png', import.meta.url).href,
-        mouse1: new URL('/public/images/en/mouse1.png', import.meta.url).href, //鼠标
-        mouse2: new URL('/public/images/en/mouse2.png', import.meta.url).href,
-        keyboard1: new URL('/public/images/en/keyboard1.png', import.meta.url).href, //键盘
-        keyboard2: new URL('/public/images/en/keyboard2.png', import.meta.url).href,
-        download: new URL('/public/images/en/downBg.png', import.meta.url).href,
+        banner1: "https://i.junyitek.com/junyitek/img/en/banner1.png",
+        banner2: "https://i.junyitek.com/junyitek/img/en/banner2.png",
+        banner3: "https://i.junyitek.com/junyitek/img/en/banner3.png", 
+        myLeft: "https://i.junyitek.com/junyitek/img/en/my-left.png", //我的服务
+        myRight: "https://i.junyitek.com/junyitek/img/en/my-right.png",
+        mouse1: "https://i.junyitek.com/junyitek/img/en/mouse1.png", //鼠标
+        mouse2: "https://i.junyitek.com/junyitek/img/en/mouse2.png",
+        keyboard1: "https://i.junyitek.com/junyitek/img/en/keyboard1.png", //键盘
+        keyboard2: "https://i.junyitek.com/junyitek/img/en/keyboard2.png",
+        download: "https://i.junyitek.com/junyitek/img/en/downBg.png",
     },
     content: {
         title1: 'OUR SERVICES',
@@ -64,7 +64,8 @@ export default {
         contactUs: "Contact us",
         deckPeople: 'Docking person',
         name: "Mr. Guo",
-        tel: "Telephone"
+        tel: "Telephone",
+        icp:"Guangdong ICP No. 2024253237"
     },
     language: {
         Chinese: 'Chinese',

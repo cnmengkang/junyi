@@ -20,30 +20,30 @@
 </template>
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import { ref, onMounted } from "vue";
-import { useI18n } from 'vue-i18n' 
-const { t } = useI18n()
+import { ref, onMounted, computed } from "vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 let active = ref(0);
 const router: any = useRouter();
-let options: any = ref([
+let options = computed(() => [
   {
-    label:t('menu.nav1'),
+    label: t("menu.nav1"),
     key: "my",
   },
   {
-    label: t('menu.nav2'),
+    label: t("menu.nav2"),
     key: "mouse",
   },
   {
-    label: t('menu.nav3'),
+    label: t("menu.nav3"),
     key: "keyboard",
   },
   {
-    label: t('menu.nav4'),
+    label: t("menu.nav4"),
     key: "plan",
   },
   {
-    label: t('menu.nav5'),
+    label: t("menu.nav5"),
     key: "scenes",
   },
 ]);
