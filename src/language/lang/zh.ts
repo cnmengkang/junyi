@@ -65,7 +65,7 @@ export default {
     //  底部翻译
     footer: {
         address: "地址",
-        city: "安徽省合肥市蜀山区",
+        city: "深圳市 福田区",
         email: "邮箱",
         contactUs: "联系我们",
         deckPeople: '对接人',
