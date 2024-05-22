@@ -3,8 +3,8 @@
         "id": "1",
         "name": "Windows客户端下载",
         "version": "1.0",
-        "show": true,  
-        "isDownload":false,
+        "show": true,
+        "isDownload": true,
         "timestamp": "2024-04-16",
         "url": "www.baidu.com",
         "system_support": "Windows7 / Windows10"
@@ -13,8 +13,8 @@
         "id": "2",
         "name": "MAC客户端下载",
         "version": "1.0",
-        "show": false, 
-        "isDownload":false, 
+        "show": false,
+        "isDownload": false,
         "timestamp": "2024-04-16",
         "url": "www.baidu.com",
         "system_support": "MacOS 10.14.6及以上"
