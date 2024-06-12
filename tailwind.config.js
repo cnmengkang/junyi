@@ -6,7 +6,7 @@ export default {
       colors: {
         header: "rgba(217, 227, 241, 1)",
         footer: "rgba(59, 59, 59, 1)",
-        downCard: "rgba(235, 235, 235, 1)",
+        downCard: "#e7eefe",
         indexCard: "rgba(225, 187, 130, 1)",
         // 首页定制配置
         bgColor: "rgba(177, 180, 195, 1)", //背景色

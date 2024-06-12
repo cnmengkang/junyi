@@ -1,4 +1,8 @@
 //zh.ts
+let addTimestamp = (url: any) => {
+    const timestamp = new Date().getTime();
+    return `${url}?timestamp=${timestamp}`;
+}
 export default {
     header: {
         menu1: '解决方案',
@@ -12,16 +16,16 @@ export default {
         nav5: '应用场景',
     },
     banner: {
-        banner1: "https://i.junyitek.com/junyitek/img/zh/banner1.png",
-        banner2: "https://i.junyitek.com/junyitek/img/zh/banner2.png",
-        banner3: "https://i.junyitek.com/junyitek/img/zh/banner3.png", 
-        myLeft: "https://i.junyitek.com/junyitek/img/zh/my-left.png", //我的服务
-        myRight: "https://i.junyitek.com/junyitek/img/zh/my-right.png",
-        mouse1: "https://i.junyitek.com/junyitek/img/zh/mouse1.png", //鼠标
-        mouse2: "https://i.junyitek.com/junyitek/img/zh/mouse2.png",
-        keyboard1: "https://i.junyitek.com/junyitek/img/zh/keyboard1.png", //键盘
-        keyboard2: "https://i.junyitek.com/junyitek/img/zh/keyboard2.png",
-        download: "https://i.junyitek.com/junyitek/img/zh/downBg.png",
+        banner1: addTimestamp("https://i.junyitek.com/junyitek/img/zh/banner1.png"),
+        banner2: addTimestamp("https://i.junyitek.com/junyitek/img/zh/banner2.png"),
+        banner3: addTimestamp("https://i.junyitek.com/junyitek/img/zh/banner3.png"),
+        myLeft: addTimestamp("https://i.junyitek.com/junyitek/img/zh/my-left.png"), //我的服务
+        myRight: addTimestamp("https://i.junyitek.com/junyitek/img/zh/my-right.png"),
+        mouse1: addTimestamp("https://i.junyitek.com/junyitek/img/zh/mouse1.png"), //鼠标
+        mouse2: addTimestamp("https://i.junyitek.com/junyitek/img/zh/mouse2.png"),
+        keyboard1: addTimestamp("https://i.junyitek.com/junyitek/img/zh/keyboard1.png"), //键盘
+        keyboard2: addTimestamp("https://i.junyitek.com/junyitek/img/zh/keyboard2.png"),
+        download: addTimestamp("https://i.junyitek.com/junyitek/img/zh/downBg.png"),
     },
     content: {
         title1: '我们的服务',
@@ -60,23 +64,22 @@ export default {
         upTime: "更新时间",
         SystemSupport: "系统支持"
     },
-
     // 下载页面
     //  底部翻译
     footer: {
         address: "地址",
         city: "深圳市 福田区",
         email: "邮箱",
-        contactUs: "联系我们",
-        deckPeople: '对接人',
+        contactUs: "商务合作",
+        deckPeople: '联系人',
         name: "郭先生",
         tel: "电话",
-        icp:"粤ICP备2024253237号"
+        icp: "粤ICP备2024253237号"
     },
     //  底部翻译
-    language:{
-        Chinese:'中文',
-        English:'英文'
+    language: {
+        Chinese: '中文',
+        English: '英文'
     }
 }
 

@@ -1,4 +1,8 @@
 // en.ts
+let addTimestamp = (url: any) => {
+    const timestamp = new Date().getTime();
+    return `${url}?timestamp=${timestamp}`;
+}
 export default {
     header: {
         menu1: 'Solution',
@@ -12,16 +16,16 @@ export default {
         nav5: 'Application Scenario',
     },
     banner: {
-        banner1: "https://i.junyitek.com/junyitek/img/en/banner1.png",
-        banner2: "https://i.junyitek.com/junyitek/img/en/banner2.png",
-        banner3: "https://i.junyitek.com/junyitek/img/en/banner3.png", 
-        myLeft: "https://i.junyitek.com/junyitek/img/en/my-left.png", //我的服务
-        myRight: "https://i.junyitek.com/junyitek/img/en/my-right.png",
-        mouse1: "https://i.junyitek.com/junyitek/img/en/mouse1.png", //鼠标
-        mouse2: "https://i.junyitek.com/junyitek/img/en/mouse2.png",
-        keyboard1: "https://i.junyitek.com/junyitek/img/en/keyboard1.png", //键盘
-        keyboard2: "https://i.junyitek.com/junyitek/img/en/keyboard2.png",
-        download: "https://i.junyitek.com/junyitek/img/en/downBg.png",
+        banner1: addTimestamp("https://i.junyitek.com/junyitek/img/en/banner1.png"),
+        banner2: addTimestamp("https://i.junyitek.com/junyitek/img/en/banner2.png"),
+        banner3: addTimestamp("https://i.junyitek.com/junyitek/img/en/banner3.png"),
+        myLeft: addTimestamp("https://i.junyitek.com/junyitek/img/en/my-left.png"), //我的服务
+        myRight: addTimestamp("https://i.junyitek.com/junyitek/img/en/my-right.png"),
+        mouse1: addTimestamp("https://i.junyitek.com/junyitek/img/en/mouse1.png"), //鼠标
+        mouse2: addTimestamp("https://i.junyitek.com/junyitek/img/en/mouse2.png"),
+        keyboard1: addTimestamp("https://i.junyitek.com/junyitek/img/en/keyboard1.png"), //键盘
+        keyboard2: addTimestamp("https://i.junyitek.com/junyitek/img/en/keyboard2.png"),
+        download: addTimestamp("https://i.junyitek.com/junyitek/img/en/downBg.png"),
     },
     content: {
         title1: 'OUR SERVICES',
@@ -61,11 +65,11 @@ export default {
         address: "Address",
         city: "Shenenen Futian District",
         email: "Mailbox",
-        contactUs: "Contact us",
-        deckPeople: 'Docking person',
+        contactUs: "Business Cooperation",
+        deckPeople: 'Contact',
         name: "Mr. Guo",
         tel: "Telephone",
-        icp:"Guangdong ICP No. 2024253237"
+        icp: "Guangdong ICP No. 2024253237"
     },
     language: {
         Chinese: 'Chinese',

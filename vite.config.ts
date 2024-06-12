@@ -10,6 +10,7 @@ export default defineConfig({
     },
   },
   server: {
+    port:9090,
     open: true,
     cors: false,
     hmr: true, // 热更新
