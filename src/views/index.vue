@@ -26,12 +26,12 @@
     <p class="text-center text-neutral-300">.Mouse Solutions.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4  transition duration-500"
       >
         <img :src="$t('banner.mouse1')" alt="" />
       </div>
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4  transition duration-500"
       >
         <img :src="$t('banner.mouse2')" alt="" />
       </div>
@@ -44,12 +44,12 @@
     <p class="text-center text-neutral-300">.Keyboard Solutions.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4  transition duration-500"
       >
         <img :src="$t('banner.keyboard1')" alt="" />
       </div>
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4  transition duration-500"
       >
         <img :src="$t('banner.keyboard2')" alt="" />
       </div>
@@ -101,7 +101,7 @@
     <p class="text-center text-neutral-300">.Application Scenario.</p>
     <div class="flex gap-20 justify-center mt-10">
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4 hover:brightness-50  transition duration-500"
       >
         <img src="/public/images/smartOffice.png" alt="" />
         <div class="scenarios">
@@ -110,7 +110,7 @@
         </div>
       </div>
       <div
-        class="overflow-hidden relative w-2/4 hover:brightness-50 transition duration-500"
+        class="overflow-hidden relative w-2/4 hover:brightness-50  transition duration-500"
       >
         <img src="/public/images/study.png" alt="" />
         <div class="scenarios">
